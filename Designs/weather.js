@@ -1,7 +1,7 @@
 
 
 const getWeather = () => {
-    fetch('http://api.openweathermap.org/data/2.5/weather?q=Stockholm,Sweden&units=metric&APPID=44c5cfc6920c2d5142919775ca620271')
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=Stockholm,Sweden&units=metric&APPID=44c5cfc6920c2d5142919775ca620271')
         .then((response) => {
             return response.json()
         })
@@ -108,7 +108,7 @@ const selectRecoHeader = (weatherToday) => {
 const container = document.getElementById("five-day-forecast")
 
 const getFiveDayForecast = () => {
-    fetch('http://api.openweathermap.org/data/2.5/forecast?q=Stockholm,Sweden&units=metric&APPID=44c5cfc6920c2d5142919775ca620271')
+    fetch('https://api.openweathermap.org/data/2.5/forecast?q=Stockholm,Sweden&units=metric&APPID=44c5cfc6920c2d5142919775ca620271')
         .then((response) => {
             return response.json()
         })
